@@ -1,10 +1,12 @@
-import { onSnake , snakExpantion , expantionRate } from "./snake.js"
+import { onSnake , snakExpantion , expantionRate, scoreSpan } from "./snake.js"
 
 let foodElem = getRandomPosition() 
-
+let score = 0
 export function updateFood() {
     if (onSnake(foodElem, {ignoreHead:false})) {
         snakExpantion(expantionRate)
+        score += +(expantionRate)
+        scoreSpan.innerText = score
         foodElem = getRandomPosition()
     }
 }

@@ -15,14 +15,33 @@ body {
     background-color: lightgray;
     width: 100vmin;
     height: 10vmin;
-    padding: 1.5% 2% ;
+    padding: 0.5% 2% ;
     font-family:  cursive;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    font-weight: 600;
+    font-size: 18px; 
     /* flex-direction: column; */
 }
+ .control div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}/*
+.control div .expantion , .control div .speed{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}  */
 .control input{
     outline: none;
+    font-size: 15px;
+    width: 100px;
+    background-color: whitesmoke;
+    text-align: center;
+    
 }
 .game-board {
   background-color: lightgray;
@@ -32,7 +51,6 @@ body {
   grid-template-columns: repeat(21, 1fr);
   grid-template-rows: repeat(21, 1fr);
   border: 30px solid red;
-  /* border-image:url(./img1.jpg) 30 30px 30px 30px 30px;  */
   border-image: url("./img1.jpg") round;
   border-image-slice: 30;
   border-image-width: 30px 30px;

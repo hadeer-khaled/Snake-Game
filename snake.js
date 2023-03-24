@@ -2,6 +2,8 @@ import { getInputDirection } from "./input.js"
 
 let expantionValue = document.querySelector('[name="expantion-rate"]')
 let speedValue = document.querySelector('[name="snake-speed"]')
+export let scoreSpan = document.querySelector(".score-span")
+
 
 export let expantionRate = expantionValue.value
 expantionValue.addEventListener("input", (e) => {
