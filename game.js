@@ -19,11 +19,7 @@ function main(currentTime) {
         loseDiv.appendChild(restartBtn)
         gameBoard.appendChild(loseDiv)
         restartBtn.addEventListener("click",()=> {
-            // window.location = "/"
-            window.location.reload();
-            // scoreSpan.innerText = "0"
-            // snakeBody = [{ x: 10, y: 11 }]
-            // loseDiv.remove()
+            window.location = "/"
         })
         return
         
