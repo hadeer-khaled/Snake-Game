@@ -1,9 +1,9 @@
 import { onSnake , snakExpantion , expantionRate } from "./snake.js"
 
-let foodElem = { x: 6, y: 10 }
+let foodElem = getRandomPosition() 
 
 export function updateFood() {
-    if (onSnake(foodElem)) {
+    if (onSnake(foodElem, {ignoreHead:false})) {
         snakExpantion(expantionRate)
         foodElem = getRandomPosition()
     }
