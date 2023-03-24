@@ -19,7 +19,7 @@ function main(currentTime) {
         loseDiv.appendChild(restartBtn)
         gameBoard.appendChild(loseDiv)
         restartBtn.addEventListener("click",()=> {
-            window.location = "/"
+            window.location.reload();
         })
         return
         
