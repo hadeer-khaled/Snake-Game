@@ -1,5 +1,5 @@
 import { drawFood, updateFood } from "./food.js"
-import { snakeSpeed, updateSnake, drawSnake, outsideGrid, getSnakeHead, snakeIntersection } from "./snake.js"
+import { snakeSpeed, updateSnake, drawSnake, outsideGrid, getSnakeHead, snakeIntersection, scoreSpan, snakeBody } from "./snake.js"
 
 let gameBoard = document.querySelector(".game-board")
 let lastRanderTime = 0
@@ -19,14 +19,18 @@ function main(currentTime) {
         loseDiv.appendChild(restartBtn)
         gameBoard.appendChild(loseDiv)
         restartBtn.addEventListener("click",()=> {
-            window.location = "/"
+            // window.location = "/"
+            window.location.reload();
+            // scoreSpan.innerText = "0"
+            // snakeBody = [{ x: 10, y: 11 }]
+            // loseDiv.remove()
         })
-
-        // if (confirm("You lose, press enter to reload")) {
-        //     window.location = "/"
-        // }
         return
-    }
+        
+        // if (confirm("You lose, press enter to reload")) {
+            //     window.location = "/"
+            // }
+        }
     window.requestAnimationFrame(main)
     
     const secondsSienceLastTime = (currentTime - lastRanderTime) / 1000

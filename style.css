@@ -95,7 +95,7 @@ body {
   /* background-color: green; */
   /* border: 0.25vmin solid black; */
   position: relative;
-  background-image: url("/food1.png");
+  background-image: url("./food1.png");
   background-position: center;
   background-size: cover;
 }

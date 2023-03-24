@@ -15,7 +15,7 @@ speedValue.addEventListener("input", (e) => {
     snakeSpeed = e.target.value
 })
 
-let snakeBody = [{ x: 10, y: 11 },]
+export let snakeBody = [{ x: 10, y: 11 },]
 let newSegments = 0
 
 export function updateSnake() {
