@@ -19,7 +19,7 @@ function main(currentTime) {
         loseDiv.appendChild(restartBtn)
         gameBoard.appendChild(loseDiv)
         restartBtn.addEventListener("click",()=> {
-            window.location = "/"
+            window.location = "https://hadeer-khaled.github.io/Snake-Game/"
         })
 
         // if (confirm("You lose, press enter to reload")) {
