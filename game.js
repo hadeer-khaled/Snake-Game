@@ -22,21 +22,14 @@ function main(currentTime) {
             window.location.reload();
         })
         return
-        
-        // if (confirm("You lose, press enter to reload")) {
-            //     window.location = "/"
-            // }
         }
     window.requestAnimationFrame(main)
     
-    const secondsSienceLastTime = (currentTime - lastRanderTime) / 1000
-    
+    const secondsSienceLastTime = (currentTime - lastRanderTime) / 1000    
     
     if (secondsSienceLastTime < (1 / snakeSpeed)) return
     
-    lastRanderTime = currentTime;
-    // console.log("Render")
-    
+    lastRanderTime = currentTime;    
     update()
     draw()
 }
